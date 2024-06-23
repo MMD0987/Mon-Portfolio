@@ -1,0 +1,235 @@
+/* style Css */
+body {
+	font-family: Arial, Helvetica, sans-serif;
+	padding: 0 2%;
+	margin: 0;
+	background-color: #fbfcfd;
+}
+
+nav {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: center;
+	background-color: #1e90ff;
+    color: #ffffff;
+	position: sticky;
+	top: 0;
+    padding: 10px 0;
+    text-align: center;
+    box-shadow: 0 2px 4px #1e90ff;
+}
+nav .profile {
+	display: flex;
+	align-items: center;
+}
+nav .profile img {
+	width: 100px;
+	height: 100px;
+	border-radius: 150%;
+}
+nav .profile h1 {
+	margin-left: 10px;
+	font-size: 15px;
+	color: #ffffff;
+	font-weight: 600;
+	transition: 0,3s ease;
+}
+nav .profile h1:hover {
+	color: #818181;
+	text-shadow: 0 0 25px #818181,
+	             0 0 50px #818181;
+	transform: scale(1.1);
+}
+
+nav ul {
+	display: flex;
+	list-style-type: none;
+}
+nav ul li {
+	margin-left: 20px;
+	display: inline-block;
+	border-bottom: 1px solid #1e90ff;
+}
+nav ul li:hover {
+	border-bottom-color: #1e90ff;
+}
+nav ul li a {
+    color: #1e90ff;
+    text-decoration: none;
+    padding: 10px 20px;
+    display: inline-block;
+    transition: background-color 0.3s ease;
+	cursor: pointer;
+	background-color: #1e90ff;
+	background: #ffffff;
+	box-shadow: #fff;
+}
+nav ul li a:hover {
+background-color: #818181;
+}
+
+.page-content {
+	margin: 4%;
+}
+.page-content header {
+	margin-top: 5%;
+	max-width: 80%;
+}
+.page-content header h1 {
+	margin: 0;
+	text-transform: uppercase;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 6vw;
+    color: #1e90ff;
+}
+.page-content header p {
+	line-height: 40px;
+	color: #818181;
+}
+.page-content header button {
+	background-color: inherit;
+	border: none;
+	outline: none;
+	padding: 0;
+	font-size: 15px;
+	font-weight: bold;
+	padding-bottom: 5px;
+	border-bottom: 1px solid #ccc;
+	cursor: pointer;
+}
+.page-content header button:hover {
+	color: #1e90ff;
+	border-bottom-color: #1e90ff;
+}
+.page-content .presentation-image {
+	margin-top: 5%;
+}
+.page-content .presentation-image img {
+	max-width: 100%;
+	height: auto;
+}
+.page-content .presentation-video {
+	margin-top: 5%;
+}
+.page-content .presentation-video video {
+	max-width: 100%;
+	height: auto;
+}
+
+.page-content .projects-section {
+	margin-top: 6%;
+}
+.page-content .projects-section h1 {
+	margin: 0;
+	text-transform: uppercase;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 3vw;
+	color: #1e90ff;
+	box-shadow: 0 4px 8px #1e90ff;
+}
+.page-content .projects-section .travail {
+	display: flex;
+	flex-wrap: wrap;
+	background-color: #1e90ff;
+}
+.page-content .projects-section .project {
+	margin-right: 20px;
+	max-width: 195px;
+}
+.page-content .projects-section .project h4 {
+	margin: 0;
+	color: #ffffff;
+}
+.page-content .projects-section .project .description {
+	font-size: 15px;
+	color: #ffffff;
+}
+.page-content .projects-section .project .dates {
+	font-size: 13px;
+	color: #ffffff;
+}
+
+.page-content .cv-section {
+	margin-top: 6%;
+}
+.page-content .cv-section h2 {
+	margin: 0;
+	text-transform: uppercase;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 3vw;
+	color: #1e90ff;
+	box-shadow: 0 4px 8px #1e90ff
+}
+.page-content .cv-section p {
+	background-color: #1e90ff;
+	color: #ffffff;
+	font-size: 2vw;
+}
+
+.page-content .contact-section {
+	margin-top: 6%;
+}
+.page-content .contact-section h2 {
+	margin: 0;
+	text-transform: uppercase;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 3vw;
+	color: #1e90ff;
+	box-shadow: 0 4px 8px #1e90ff;
+}
+form {
+    background-color: #1e90ff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px #1e90ff;
+    max-width: 600px;
+    margin: 20px auto;
+}
+form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+form input[type="text"],
+form input[type="email"],
+form input[type="password"],
+form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    box-sizing: border-box;
+}
+form input[type="submit"] {
+    background-color: #fbfbfc;
+    color: #1e90ff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+form input[type="submit"]:hover {
+    background-color: #818181;
+}
+
+
+footer {
+	margin-top: 5%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	padding: 10px;
+	background-color: #1e90ff;
+	color: white;
+	box-shadow: 0 2px 4px #1e90ff;
+}
+footer .colonne p {
+	font-size: 15px;
+	color: #fdfbfb;
+	cursor: pointer;
+}
+footer .colonne p:hover {
+	color: #fff;
+}
